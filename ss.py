@@ -5,7 +5,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.ensemble import RandomForestRegressor
 
 # Add clinic logo
-st.sidebar.image("reign clinic.png", use_column_width=True)
+st.sidebar.image("reign clinic.png", use_container_width=True)
 
 # Define categorical and numerical features
 categorical_features = ['Department', 'Doctor', 'Visit Type']
