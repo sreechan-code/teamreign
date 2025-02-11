@@ -5,7 +5,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.ensemble import RandomForestRegressor
 
 # Add clinic logo (Fixed Image Issue)
-st.sidebar.image("reign clinic.png", width=None)  # Auto-scales image without errors
+st.sidebar.image("reign clinic.png", use_container_width=True)  # ✅ Fixed parameter
 
 # Define categorical and numerical features
 categorical_features = ['Department', 'Doctor', 'Visit Type']
