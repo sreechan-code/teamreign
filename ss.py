@@ -5,7 +5,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.ensemble import RandomForestRegressor
 
 # Add clinic logo
-st.sidebar.image("reign clinic.png", use_container_width=True)
+st.sidebar.image("reign clinic.png", use_column_width=True)
 
 # Define categorical and numerical features
 categorical_features = ['Department', 'Doctor', 'Visit Type']
@@ -19,8 +19,8 @@ st.write("Enter patient details to predict total wait time.")
 age = st.number_input("Age", min_value=0, max_value=120, value=30)
 prev_visits = st.number_input("Previous Visits", min_value=0, value=1)
 appt_time = st.number_input("Appointment Time (24hr)", min_value=0, max_value=23, value=10)
-department = st.selectbox("Department", ['General', 'Cardiology', 'Orthopedics', 'Dermatology', 'Neurology'])
-doctor = st.selectbox("Doctor", ['Dr. Smith', 'Dr. Johnson', 'Dr. Lee', 'Dr. Patel', 'Dr. Gomez'])
+department = st.selectbox("Department", ['Cardiologist', 'Neurologist', 'Orthopedics', 'Pediatrics', 'Dermotologist','endocrinologist'])
+doctor = st.selectbox("Doctor", ['Dr. Pallavi', 'Dr. Rashan', 'Dr. Yaseen', 'Dr. Minen', 'Dr. Sreechand','Dr. Sashank'])
 visit_type = st.selectbox("Visit Type", ['Routine', 'Emergency', 'Follow-up'])
 
 # Define pre-fitted encoder and scaler
